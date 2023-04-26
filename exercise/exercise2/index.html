@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+           body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .left{
+                position: absolute;width: 291px;
+                height: 1050px;
+                left: 0px;
+                top: 0px;                
+                background: #20A6FC;
+            }
+            #profile{
+                 margin-top: 305px;
+                 color: #FFFFFF;
+                 margin-left: 10px;
+                 width: 50px;
+                 height: 20px;
+            }
+            .btn-logout button{
+                    background-color: rgb(238, 238, 238);
+                    /* margin-top:125px ; */
+                   width:200px;
+                   height:45px ;
+                   margin: 45px;
+                   border: 0;
+                   border-radius: 8px;
+                   cursor: pointer;
+            }
+            .btn-logout div{
+                
+                   padding:1px ;
+            }
+
+            
+            .bottom{
+                position: absolute;
+                width: 1440px;
+                height: 400px;
+                left: 0px;
+                top: 1050px;
+                background: #20A6FC;
+            }
+            #main-heading{
+                position: absolute;
+                width: 226px;
+                height: 30px;
+                left: 32px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 34px;
+                line-height: 46px;
+                color: #FFFFFF;
+            }
+            .table-nav{
+                margin-top: 100px;
+                background-color: #20A6FC;
+                margin-left :5px;
+                padding-left: 20px;
+            }
+          
+            .table-nav-txt{
+                color: white;
+                font-size: 16px;
+              }
+            .notification-icon{
+                position: absolute;
+                width: 39px;
+                height: 36px;
+                left: 1255px;
+                top: 49px;
+            }
+            .notification-image{
+                position: absolute;
+                width: 50px;
+                height: 55px;
+                left: 1322px;
+                top: 42px;
+            }
+            .resume{
+                box-sizing: border-box;
+                position: absolute;
+                margin-left: 320px;
+                top: 20%;
+                
+                Width:380px;
+                Height:447px;
+                background: #FFFFFF;
+                border: 1px solid #EAEAEA;
+                border-radius: 8px;
+            }
+            .resume-heading
+            {
+                position: absolute;
+                left: 100px;
+                top: 135px;
+                font-size: 20px;
+                width: 90%;
+                align-items: center;
+                
+            }
+            .uiux{
+                position: absolute;
+                font-size: 14px;
+                opacity: 0.5;
+                margin-left: 25px;
+                margin-top: -16px;
+                
+            }
+            .resume-button
+            {
+                position: absolute;
+                margin-left: -50px;
+                margin-top: 35px;
+                width: 80%;height: 50px;
+                background: #d2ecfcd4;
+               border: 0px;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+            .aboutme{
+                box-sizing: border-box;
+                position: absolute;
+                Width:380px;
+                Height:359px;
+                margin-left: 320px;
+                top: 85%;
+                background: #FFFFFF;
+                border: 1px solid #EAEAEA;
+                border-radius: 8px;
+            }
+            .skills{
+                box-sizing: border-box;
+                position: absolute;
+                margin-left: 740px;
+                top: 20%;
+                Width:657px;
+                Height:298px;
+                background: #FFFFFF;
+                border: 1px solid #EAEAEA;
+                border-radius: 8px;
+            }
+            .education{
+                box-sizing: border-box;
+                position: absolute;
+                margin-left: 740px;
+                top: 65%;
+                Width:657px;
+                Height:255px;
+                background: #FFFFFF;
+                border: 1px solid #EAEAEA;
+                border-radius: 8px;
+            }
+            .experiance
+            {
+                box-sizing: border-box;
+                position: absolute;
+                margin-left: 740px;
+                top: 104%;
+                Width:657px;
+                Height:255px;
+                background: #FFFFFF;
+                border: 1px solid #EAEAEA;
+                border-radius: 8px;
+            }
+            .nav2{
+                position: absolute;
+                width: 236px;
+                height: 275px;
+                left: 40px;
+                top: 659px;
+            }
+           .nav2-square{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: #f2f3fa34;
+            
+           }
+           .nav2-square img{
+            position: absolute;           
+            top: 4px;
+            left: 4px;
+            
+           }
+           .nav2-h1{
+            margin-left: 50px;
+            margin-top: 15px;
+            font-size: 14px;
+            color: white;
+           
+           }
+            
+            .bottom-heading{
+                color: white;
+                position: absolute;
+                width: 691px;
+                height: 133px;
+                left: 573px;
+                top: 72px;
+            }
+            .bottom-heading p{
+                
+                position: absolute;
+                text-align: center;
+                line-height: 23px;
+            }
+            .subscribe{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 12px 24px;
+                gap: 280px;
+                position: absolute;
+                width: 697px;
+                height: 50px;
+                left: 373px;
+                top: 253px;
+                background: #F1F9FE;
+                border-radius: 8px;
+            }
+            .subscribe button{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 0px;
+                width: 146px;
+                height: 51px;
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+                color: white;
+                background-color: #159EEC;
+                border: 0;
+                border-radius: 8px;
+                cursor: pointer;
+                
+            }
+            .subscribe button span{
+              position: absolute; 
+              text-align: center;
+              font-size: 18px;
+              padding: 15px 30px;  
+              cursor: pointer;              
+            }
+            .footer1
+            {
+                position: absolute;
+                width: 1440px;
+                height: 310px;
+                left: 0px;
+                top: 1391px;
+                background: #FFFFFF;
+            }
+            .f-hire1{
+                position: absolute;
+                width: 283px;
+                height: 226px;
+                left: 165px;
+                top: 73px;
+            }
+            .f-hire1 h1{
+                position: absolute;
+                width: 183px;
+                height: 38px;
+                left: 165px;
+                top: 73px;
+                font-size: 27.8068px;
+                color: #242D62;
+            }
+            .f-hire1 p{
+                position: absolute;
+                width: 230px;
+                height: 38px;
+                
+                top: 73px;
+                font-size: 14px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: #6D7394;
+            }
+            .social{
+                margin-top: 150px;
+                cursor: pointer;
+            }
+            .social-icon{
+                padding-right:18px;            
+            }
+            .f-l-table{
+                float: right;
+                margin-top: 90px;
+                margin-right: 450px;            
+
+            }
+             .row1{
+                padding: 15px 20px;
+                color: #242D62;
+               
+            }
+            .row2{
+                padding: 4px 20px;
+                color: #6D7394;
+                font-size: 14px;
+                cursor: pointer;
+            }
+            .nav2-h1{
+                margin-left: 45px;
+
+            }
+            /*.............................................................................*/
+            .profile-open{
+                margin-top: 120px;margin-left: 30%;
+            }
+            .profile-green{
+                position: absolute;
+                width: 80px;
+                height: 15px;
+                background-color: #4CB32B;
+                color: white;
+                font-size: 12px;
+                border-radius: 15px;
+                top: 205px;left: 97px;
+            }
+            .right-top{
+                box-sizing: border-box;
+                position: absolute;
+                width: 1156px;
+                height: 96px;
+                left: 290px;
+                top: 0px;
+                background: #FFFFFF;
+                border-bottom: 1px solid #E7E7E7;
+
+            }
+            .allJobs{
+                position: absolute;
+                width: 84px;
+                height: 29px;
+                left: 50px;
+                top: 28px;
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 29px;
+                color: #111111;
+            }
+            .search
+            {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 12px;
+                gap: 8px;
+                position: absolute;
+                width: 328px;
+                height: 48px;
+                left: 50px;
+                top: 120px;
+                background: #FFFFFF;
+                border-radius: 8px;
+            }
+            .location{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 12px;
+                gap: 8px;
+                position: absolute;
+                width: 176px;
+                height: 48px;
+                left: 360px;
+                top: 120px;
+                background: #FFFFFF;
+                border-radius: 8px;
+            }
+            .right-left span{
+                position: absolute;
+                width: 48px;
+                height: 48px;
+                left: 92px;
+                top: 10px;
+                order: 0;
+                flex-grow: 0;
+
+            }
+            .CSE{
+                box-sizing: border-box;
+
+                position: absolute;
+                width: 584px;
+                height: 210px;
+                left: 20px;
+                top: 229px;
+                border: 1px solid #E4E4E4;
+                border-radius: 12px;
+            }
+            .t-img{
+                position: absolute;
+                width: 56px;
+                height: 56px;
+                left: 332px;
+                top: 245px;
+
+                border-radius: 8px;
+            }
+            .cse-first h2{
+                position: absolute;
+                width: 246px;
+                height: 23px;
+                /* left: 404px; */
+                /* top: 251px; */
+                margin-top: 10px;
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 23px;
+
+                color: #111111;
+            }
+            .transparent{
+                /* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 189px;
+height: 18px;
+
+
+            }
+            .cse-main{
+                position: absolute;
+                width: 246px;
+                height: 23px;
+                left: 104px;
+                margin-top: 10px;
+                font-family: 'sans-serif';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 23px;
+                color: #111111;  
+            }
+            .cse-mini{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0px;
+                /* gap: 8px; */
+                position: absolute;
+                width: 189px;
+                height: 18px;
+                left: 104px;
+                margin-top: 30px;
+            }
+            .cse-mini{}
+            .table-button{
+                width: 90px; 
+                height: 20px; 
+                background-color: #CAC3AA; 
+                border-radius: 16px; 
+                color: white;
+                font-size: 14px;
+                text-align: center;
+            }
+            .building-img{
+                position: absolute;
+                width: 508px;
+                height: 144px;
+                left: 932px;
+                top: 96px;
+
+            }
+            .building-img-center{
+                position: absolute;
+                width: 112px;
+                height: 112px;
+                left: 1130px;
+                top: 169px;
+            }
+            .hr2{
+                position: absolute;
+                width: 444px;
+                height: 0px;
+                margin-left: 965px;
+                top: 423px;
+
+                border: 1px solid #EBEBEB;
+                
+
+            }
+            .frame2{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0px;
+                gap: 10px;
+
+                position: absolute;
+                width: 195px;
+                height: 48px;
+                left: 964px;
+                top: 447px;
+            }
+            .frame3{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0px;
+                gap: 10px;
+
+                position: absolute;
+                width: 170px;
+                height: 48px;
+                left: 964px;
+                top: 515px;
+            }
+            .frame4{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 10px;
+
+            position: absolute;
+            width: 157px;
+            height: 48px;
+            left: 964px;
+            top: 583px;
+            }
+            .frame5{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0px;
+                gap: 10px;
+
+                position: absolute;
+                width: 123px;
+                height: 48px;
+                left: 1186px;
+                top: 447px;
+                }
+            .frame6{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0px;
+                gap: 10px;
+
+                position: absolute;
+                width: 166px;
+                height: 48px;
+                left: 1186px;
+                top: 515px;
+}
+        .frame7{
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            position: absolute;
+            width: 508px;
+            height: 41px;
+            left: 932px;
+            top: 655px;
+            border-bottom: 1px solid #EBEBEB;
+                }
+            .frame8{
+                position: absolute;
+                width: 444px;
+                height: 176px;
+                left: 964px;
+                top: 731px;
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #7A7A7A;
+            }
+            .frame9{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 16px;
+                position: absolute;
+                width: 444px;
+                height: 45px;
+                left: 964px;
+                top: 947px;
+            }
+            .frame11{
+                position: absolute;
+                width: 119px;
+                height: 18px;
+                left: 1289px;
+                top: 256px;
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                text-align: right;
+                color: #B1B1B1;
+            }
+            .frame12{
+                position: absolute;
+                width: 88px;
+                height: 18px;
+                left: 964px;
+                top: 256px;
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 18px;
+                color: #111111;
+            }
+            .frame13{
+                position: absolute;
+                width: 292px;
+                height: 31px;
+                left: 964px;
+                top: 305px;
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 31px;
+                color: #111111;
+
+            }
+            .frame14{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0px;
+                gap: 8px;
+                position: absolute;
+                width: 176px;
+                height: 21px;
+                left: 964px;
+                top: 352px;
+
+            }
+            .frame15{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0px;
+                gap: 8px;
+                position: absolute;
+                width: 80px;
+                height: 18px;
+                left: 964px;
+                top: 381px;
+
+            }
+            .frame16{
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                left: 1368px;
+                top: 305px;
+            }
+            
+            
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="left" >
+            <h4 id="main-heading">HireMe Now!</h4>
+            <div class="profile-open">
+                <img src="images/profile/profile2.png">
+                <div class="profile-green">Open to work</div>
+            </div>
+            <div class="table-nav">
+                <table>
+                    <tr>
+                        <td><img src="images/buildings-2.png" style="padding: 15px;"></td>
+                        <td><div><a class="table-nav-txt"  style="padding: 15px;cursor: pointer;" >All Jobs</a></div></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/clipboard-text.png"  style="padding: 15px;"></td>
+                        <td><div><a class="table-nav-txt"  style="padding: 15px;cursor: pointer;">My Applications</a></div></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/message.png"  style="padding: 15px;"></td>
+                        <td><div><a class="table-nav-txt"  style="padding: 15px;cursor: pointer;">Messages</a></div></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/profile.png"  style="padding: 15px;"></td>
+                        <td><div><a class="table-nav-txt"  style="padding: 15px;cursor: pointer;">My Profile</a></div></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/setting-2.png"  style="padding: 15px;"></td>
+                        <td><div><a class="table-nav-txt"  style="padding: 15px;cursor: pointer;">Settings</a></div></td>
+                    </tr>
+                </table>
+               
+                                 
+            </div>
+            <div class="nav2">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="nav2-square">
+                                <img src="images/buildings.png">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="nav2-h1">
+                                <div>Type of Employment</div>
+                                <div style="opacity: 0.8;">Full Time Jobs</div>
+                            </div>                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="nav2-square">
+                                <img src="images/crown.png">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="nav2-h1">
+                                <div>Type of Employment</div>
+                                <div style="opacity: 0.8;">Full Time Jobs</div>
+                            </div>                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="nav2-square">
+                                <img src="images/money-3.png">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="nav2-h1">
+                                <div>Experience Level</div>
+                                <div style="opacity: 0.8;">Mid Level</div>
+                            </div>                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="nav2-square">
+                                <img src="images/locations.png">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="nav2-h1">
+                                <div>Salary Range</div>
+                                <div style="opacity: 0.8;">₹3000-₹5000</div>
+                            </div>                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="nav2-square">
+                                <img src="images/house.png">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="nav2-h1">
+                                <div>Location</div>
+                                <div style="opacity: 0.8;">South East Asia</div>
+                            </div>                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="nav2-square">
+                                <img src="images/icons/">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="nav2-h1">
+                                <div>Onsite / Remote</div>
+                                <div style="opacity: 0.8;">Remote Job</div>
+                            </div>                            
+                        </td>
+                    </tr>
+                </table>
+            </div>    
+            
+            <div class="btn-logout">
+                <button>
+                    <span style="position: absolute;margin-left: -45px;font-size: 15px; text-align: center;">Edit Prefenences</span>
+                </button>
+            </div>
+        </div>
+        <!--***********************************left-nav-end*******************************************-->
+        <div class="right">
+           <div class="right-top">
+                <div class="allJobs">All Jobs</div>
+                <div style="margin-left: 900px; margin-top:20px"><img src="images/left.png"></div>
+                <div class="right-left">
+                    <div class="search"><img src="images/search.png"></div>
+                    <div class="location"><img src="images/location.png"></div><span><img src="images/setting.png"></span>
+                    <div style="margin-left: 404px;margin-top:100px; position:absolute">
+                        <span style="left: 10px;width:150px">Sort by:</span><span style="position: absolute;width: 200px;">Newest Jobs</span>
+                    </div>
+
+                    <div class="CSE">
+                        <div class="cse-first">
+                            <img class="t-image"src="images/T.png">
+                            <div style="margin-top: -50px; margin-left:70px" >
+                                <div class="cse-main">Customer Service Executive</div>
+                                <div class="cse-mini"style="font-size: 12px;"><span style="margin-left: -41px;color: #159EEC; margin-top: -7px;" >Teleperformance</span>Location</div>
+                                <divclass="para"  style="opacity: 0.8; font-size:14px;margin-top: 60px;position: absolute;line-height: 23px;">We are looking for a UI/UX Designer to turn our software into easy-to-use<br> products for our clients.</div>
+                            </div>
+                            <div style="margin-top:140px;margin-left: 40px;">
+                                <table>
+                                    <tr>
+                                        <td><div class="table-button"  >Full Time</div></td>
+                                        <td><div class="table-button"  >Mid Level</div></td></td>
+                                        <td><div class="table-button"  >$3000-$5000</div></td></td>
+                                        <td><div class="table-button"  >Indonesia</div></td>
+                                        <td><div class="table-button"  >Onsite</div></td>
+                           
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="CSE" style="margin-top:240px ;">
+                            <div class="cse-first2">
+                                <img class="t-image"src="images/green-ro.png">
+                                <div style="margin-top: -50px; margin-left:70px" >
+                                    <div class="cse-main">junior Process Associate</div>
+                                    <div class="cse-mini"style="font-size: 12px;"><span style="margin-left: -41px;color: #159EEC; margin-top: -7px;" >Teleperformance</span>Location</div>
+                                    <divclass="para"  style="opacity: 0.8; font-size:14px;margin-top: 60px;position: absolute;line-height: 23px;">Product Designer responsibilities include defining product specifications,<br> creating digital or print drawings and designing fully-functional products.</div>
+                                </div>
+                                <div style="margin-top:140px;margin-left: 50px;">
+                                    <table>
+                                        <tr>
+                                            <td><div class="table-button"  >Full Time</div></td>
+                                            <td><div class="table-button"  >Mid Level</div></td></td>
+                                            <td><div class="table-button"  >$3000-$5000</div></td></td>
+                                            <td><div class="table-button"  >Indonesia</div></td>
+                                            <td><div class="table-button"  >Onsite</div></td>
+                               
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="CSE" style="margin-top:490px ;">
+                                <div class="cse-first2">
+                                    <img class="t-image"src="images/randsad.png">
+                                    <div style="margin-top: -50px; margin-left:70px" >
+                                        <div class="cse-main">junior Process Associate</div>
+                                        <div class="cse-mini"style="font-size: 12px;"><span style="margin-left: -41px;color: #159EEC; margin-top: -7px;" >Teleperformance</span>Location</div>
+                                        <divclass="para"  style="opacity: 0.8; font-size:14px;margin-top: 60px;position: absolute;line-height: 23px;">Product Designer responsibilities include defining product specifications,<br> creating digital or print drawings and designing fully-functional products.</div>
+                                    </div>
+                                    <div style="margin-top:140px;margin-left: 50px;">
+                                        <table>
+                                            <tr>
+                                                <td><div class="table-button"  >Full Time</div></td>
+                                                <td><div class="table-button"  >Mid Level</div></td></td>
+                                                <td><div class="table-button"  >$3000-$5000</div></td></td>
+                                                <td><div class="table-button"  >Indonesia</div></td>
+                                                <td><div class="table-button"  >Onsite</div></td>
+                                   
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="CSE" style="margin-top:730px ;">
+                                    <div class="cse-first2">
+                                        <img class="t-image"src="profile/bird.png">
+                                        <div style="margin-top: -50px; margin-left:70px" >
+                                            <div class="cse-main">junior Process Associate</div>
+                                            <div class="cse-mini"style="font-size: 12px;"><span style="margin-left: -41px;color: #159EEC; margin-top: -7px;" >Teleperformance</span>Location</div>
+                                            <divclass="para"  style="opacity: 0.8; font-size:14px;margin-top: 60px;position: absolute;line-height: 23px;">Product Designer responsibilities include defining product specifications,<br> creating digital or print drawings and designing fully-functional products.</div>
+                                        </div>
+                                        <div style="margin-top:140px;margin-left: 50px;">
+                                            <table>
+                                                <tr>
+                                                    <td><div class="table-button"  >Full Time</div></td>
+                                                    <td><div class="table-button"  >Mid Level</div></td></td>
+                                                    <td><div class="table-button"  >$3000-$5000</div></td></td>
+                                                    <td><div class="table-button"  >Indonesia</div></td>
+                                                    <td><div class="table-button"  >Onsite</div></td>
+                                       
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                   
+                    </div>
+                </div>
+                <div class="right-right">
+                    <div class="building-img"><img src="images/building1.png"></div>
+                    <div class="building-img-center"><img src="images/profile/Group5695.png"></div>
+                    <div class="frame11"><img src="images/frame1-1.png"></div>
+                    <div class="frame12"><img src="images/frame1-2.png"></div>
+                    <div class="frame13"><img src="images/frame13.png"></div>
+                    <div class="frame14"><img src="images/frame14.png"></div>
+                    <div class="frame15"><img src="images/frame15.png"></div>
+                    <div class="frame16"><img src="images/frame16.png"></div>
+                    
+                    
+
+
+                    <hr class="hr2">
+                    <div class="frame2"><img src="images/Frame 2.png"></div>
+                    <div class="frame3"><img src="images/Frame 3.png"></div>
+                    <div class="frame4"><img src="images/Frame 4.png"></div>
+                    <div class="frame5"><img src="images/Frame 5.png"></div>
+                    <div class="frame6"><img src="images/Frame 6.png"></div>
+                    <div class="frame7"><img src="images/frame7.png"></div>
+                    <div class="frame8"><img src="images/frame8.jpg"></div>
+                    <div class="frame9"><img src="images/frame9.png"></div>
+
+                </div>
+           </div>
+        </div>
+
+        <div class="bottom">
+            <div class="b-lines"></div>
+            <div class="bottom-heading">
+                <h1>Get Notified every new job</h1>
+                <p>Ideal platform for job seekers passionate about startups and<br> seeking new career opportunities.</p>
+            </div>
+            <div class="subscribe">
+               <span>Type Your Email Address</span><button><span style="text-align: center">Subscribe</span></button>
+            </div>
+        </div>
+
+        <div class="footer1">
+            <div class="f-hire1">
+                <h2>HireMe Now!</h2>
+                <p>Ideal platform for job seekers<br> passionate about startups and<br>seeking new career opportunities.</p>
+                <div class="social">
+                    <table>
+                        <tr>
+                            <td><div class="social-icon"><img src="images/youtube.png"></div></td>
+                            <td><div class="social-icon"><img src="images/instagram.png"></div></td>
+                            <td><div class="social-icon"><img src="images/twitter.png"></div></td>
+                            <td><div class="social-icon"><img src="images/linked.png"></div></td>
+                            <td><div class="social-icon"><img src="images/facebook.png"></div></td>
+                            
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="f-link">
+               <div class="f-l-table">
+                <table>
+                    <th><div class="row1">About us</div></th>
+                    <th><div class="row1">Company</div></th>
+                    <th><div class="row1">Support</div></th>
+                    <th><div class="row1">Service</div></th>
+                    <tr>
+                        <td><div  class="row2">About us</div></td>
+                        <td><div  class="row2">Contact us</div></td>
+                        <td><div  class="row2">Suport</div></td>
+                        <td><div  class="row2">SEO</div></td>
+                    </tr>
+                    <tr>
+                        <td><div  class="row2">Home</div></td>
+                        <td><div  class="row2">Career</div></td>
+                        <td><div  class="row2">Privacy</div></td>
+                        <td><div  class="row2">UI Design</div></td>
+                    </tr>
+                    <tr>
+                        <td><div  class="row2">Feature</div></td>
+                        <td><div  class="row2">Pricing</div></td>
+                        <td><div  class="row2">FAQ</div></td>
+                        <td><div  class="row2">Developer</div></td>
+                    </tr>
+                    <tr>
+                        <td><div   class="row2">Team</div></td>
+                        <td><div  class="row2">Blog</div></td>
+                        <td><div  class="row2"></div></td>
+                        <td><div  class="row2">Accountr</div></td>
+                    </tr>
+                    
+                    
+                </table>
+               </div>
+            </div>
+        </div>
+        <hr style="margin-top: 1750px;margin-left: 15%; width: 85%;">
+        <div style="margin-top: 30px;">
+            <div style="float:left ;margin-left: 15%;color: #6D7394;">Terms & Conditions | Privacy Policy</div>
+            <div style="float:right ;color: #6D7394;">Copyright © 2023. All right reserved </div>
+        </div>
+
+
+    </div>
+</body>
+</html>

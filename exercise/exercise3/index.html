@@ -1,0 +1,583 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .left{
+                position: absolute;width: 291px;
+                height: 1050px;
+                left: 0px;
+                top: 0px;                
+                background: #20A6FC;
+            }
+            #profile{
+                 margin-top: 305px;
+                 color: #FFFFFF;
+                 margin-left: 10px;
+                 width: 50px;
+                 height: 20px;
+            }
+            .btn-logout button{
+                    background-color: rgb(238, 238, 238);
+                    margin-top:85px ;
+                   width:200px;
+                   height:45px ;
+                   margin: 45px;
+                   border: 0;
+                   border-radius: 8px;
+                   cursor: pointer;
+            }
+            .btn-logout div{
+                
+                   padding:10px ;
+            }
+
+            
+            .bottom{
+                position: absolute;
+                width: 1440px;
+                height: 400px;
+                left: 0px;
+                top: 1050px;
+                background: #20A6FC;
+            }
+            #main-heading{
+                position: absolute;
+                width: 226px;
+                height: 30px;
+                left: 32px;
+                top: 31px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 34px;
+                line-height: 46px;
+                color: #FFFFFF;
+            }
+            .table-nav{
+                margin-top: 176px;
+                background-color: #20A6FC;
+                margin-left :5px;
+                padding-left: 20px;
+            }
+          
+            .table-nav-txt{
+                color: white;
+                font-size: 16px;
+              }
+            .notification-icon{
+                position: absolute;
+                width: 39px;
+                height: 36px;
+                left: 1255px;
+                top: 49px;
+            }
+            .notification-image{
+                position: absolute;
+                width: 50px;
+                height: 55px;
+                left: 1322px;
+                top: 42px;
+            }
+            .resume{
+                box-sizing: border-box;
+                position: absolute;
+                margin-left: 320px;
+                top: 20%;
+                
+                Width:380px;
+                Height:447px;
+                background: #FFFFFF;
+                border: 1px solid #EAEAEA;
+                border-radius: 8px;
+            }
+            .resume-heading
+            {
+                position: absolute;
+                left: 100px;
+                top: 135px;
+                font-size: 20px;
+                width: 90%;
+                align-items: center;
+                
+            }
+            .uiux{
+                position: absolute;
+                font-size: 14px;
+                opacity: 0.5;
+                margin-left: 25px;
+                margin-top: -16px;
+                
+            }
+            .resume-button
+            {
+                position: absolute;
+                margin-left: -50px;
+                margin-top: 35px;
+                width: 80%;height: 50px;
+                background: #d2ecfcd4;
+               border: 0px;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+            .aboutme{
+                box-sizing: border-box;
+                position: absolute;
+                Width:380px;
+                Height:359px;
+                margin-left: 320px;
+                top: 85%;
+                background: #FFFFFF;
+                border: 1px solid #EAEAEA;
+                border-radius: 8px;
+            }
+            .skills{
+                box-sizing: border-box;
+                position: absolute;
+                margin-left: 740px;
+                top: 20%;
+                Width:657px;
+                Height:298px;
+                background: #FFFFFF;
+                border: 1px solid #EAEAEA;
+                border-radius: 8px;
+            }
+            .education{
+                box-sizing: border-box;
+                position: absolute;
+                margin-left: 740px;
+                top: 65%;
+                Width:657px;
+                Height:255px;
+                background: #FFFFFF;
+                border: 1px solid #EAEAEA;
+                border-radius: 8px;
+            }
+            .experiance
+            {
+                box-sizing: border-box;
+                position: absolute;
+                margin-left: 740px;
+                top: 104%;
+                Width:657px;
+                Height:255px;
+                background: #FFFFFF;
+                border: 1px solid #EAEAEA;
+                border-radius: 8px;
+            }
+            .right-images-back{
+                position:absolute; 
+                width: 46px;
+                height:46px;
+                left:10px; 
+                top:10px; 
+                background: #20A6FC;
+                border-radius: 50%; 
+                opacity: 0.1;
+            }
+            .r-i-icons
+            {
+                position: absolute;
+                 margin-left:21px; 
+                 top: 16px;
+            }
+            .r-i-i-heading
+            {
+                font-size: 16px;
+                left: 95px;
+                top: 35px;
+                position: absolute;
+            }
+            .resume-img{
+                position: absolute;
+                left: 32.71%;
+                right: 60.35%;
+                top: 8.48%;
+                bottom: 86.21%;
+            }
+            .pencil1{
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                left: 335px;
+                top: 405px;
+            }
+            .table-resume
+            {
+                position: absolute;
+                padding-bottom: 5px;
+                text-align: center;
+            } 
+            .pencil2{
+                float: right;
+                top:928px ;
+                cursor: pointer;
+                padding-right: 50px;
+               
+            }
+            .pencil2 img{
+                padding-right: 10px;
+                
+            }
+            .bottom-heading{
+                color: white;
+                position: absolute;
+                width: 691px;
+                height: 133px;
+                left: 573px;
+                top: 72px;
+            }
+            .bottom-heading p{
+                
+                position: absolute;
+                text-align: center;
+                line-height: 23px;
+            }
+            .subscribe{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 12px 24px;
+                gap: 280px;
+                position: absolute;
+                width: 697px;
+                height: 50px;
+                left: 373px;
+                top: 253px;
+                background: #F1F9FE;
+                border-radius: 8px;
+            }
+            .subscribe button{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 0px;
+                width: 146px;
+                height: 51px;
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+                color: white;
+                background-color: #159EEC;
+                border: 0;
+                border-radius: 8px;
+                cursor: pointer;
+                
+            }
+            .subscribe button span{
+              position: absolute; 
+              text-align: center;
+              font-size: 18px;
+              padding: 15px 30px;  
+              cursor: pointer;              
+            }
+            .footer1
+            {
+                position: absolute;
+                width: 1440px;
+                height: 310px;
+                left: 0px;
+                top: 1391px;
+                background: #FFFFFF;
+            }
+            .f-hire1{
+                position: absolute;
+                width: 283px;
+                height: 226px;
+                left: 165px;
+                top: 73px;
+            }
+            .f-hire1 h1{
+                position: absolute;
+                width: 183px;
+                height: 38px;
+                left: 165px;
+                top: 73px;
+                font-size: 27.8068px;
+                color: #242D62;
+            }
+            .f-hire1 p{
+                position: absolute;
+                width: 230px;
+                height: 38px;
+                
+                top: 73px;
+                font-size: 14px;
+                line-height: 160%;
+                letter-spacing: 0.02em;
+                color: #6D7394;
+            }
+            .social{
+                margin-top: 150px;
+                cursor: pointer;
+            }
+            .social-icon{
+                padding-right:18px;            
+            }
+            .f-l-table{
+                float: right;
+                margin-top: 90px;
+                margin-right: 450px;            
+
+            }
+             .row1{
+                padding: 15px 20px;
+                color: #242D62;
+               
+            }
+            .row2{
+                padding: 4px 20px;
+                color: #6D7394;
+                font-size: 14px;
+                cursor: pointer;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="left" >
+                <h4 id="main-heading">HireMe Now!</h4>
+                <div class="table-nav">
+                    <table>
+                        <tr>
+                            <td><img src="images/buildings-2.png" style="padding: 15px;"></td>
+                            <td><div><a class="table-nav-txt"  style="padding: 15px;cursor: pointer;" >All Jobs</a></div></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/clipboard-text.png"  style="padding: 15px;"></td>
+                            <td><div><a class="table-nav-txt"  style="padding: 15px;cursor: pointer;">My Applications</a></div></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/message.png"  style="padding: 15px;"></td>
+                            <td><div><a class="table-nav-txt"  style="padding: 15px;cursor: pointer;">Messages</a></div></td>
+                        </tr>
+                        <tr>
+                            <td><img src=".png"  style="padding: 15px;"></td>
+                            <td><div><a class="table-nav-txt"  style="padding: 15px;cursor: pointer;">My Profile</a></div></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/setting-2.png"  style="padding: 15px;"></td>
+                            <td><div><a class="table-nav-txt"  style="padding: 15px;cursor: pointer;">Settings</a></div></td>
+                        </tr>
+                    </table>
+                   
+                                     
+                </div>
+                <div id="profile" >profile</div>
+                <div style="margin-top: 20px;"><img src="images/pro2.png"></div>
+                <div class="btn-logout">
+                    <button>
+                        <img src="images/exit.png">
+                        <span style="padding-top: 10px;position: absolute;">Logout</span>
+                    </button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="r-top">
+                    <div style="position: absolute;margin-left:30%;top: 2.10%;bottom: 94.49%;">
+                    <h4 style="font-size: 24px;color: #3E435D;">Welcome,Leslie</h4>
+                    <p style="font-size: 16px;color: #ADA7A7;"> Tue, 07 June  2023</p>
+                </div>
+                <div class="notification-icon">
+                    <img src="images/notification-bing.png">
+                </div>
+                <div class="notification-image">
+                    <img src="images/profile1.jpg">
+                </div>
+                </div>
+                <div>
+                    <div class="right-left">
+                        <div class="resume">
+                            
+                                <img src="images/profile2.png" class="resume-img">
+                                <div class="resume-heading">
+                                    <p>Leslie Alexander</p>
+                                    <p class="uiux">UI/UX Designer</p>
+                                    <button class="resume-button">
+                                       <div style="position: absolute;width: 204px;height: 30px;left:38px;top:13px;">
+                                        <img src="images/upload.png">
+                                            <span style="text-align: center;color: #20A6FC; font-size: 20px;">RESUME</span>
+                                     </div> 
+                                    </button>
+                                </div>
+                                <div style="margin-top:305px ;margin-left:50px; ">
+                                    <table>
+                                        <tr>
+                                            <td><img src="images/sms.png" style="padding: 5px;cursor: pointer;"></td>
+                                            <td><div style="padding: 5px;opacity: 0.4;">alexanderleslie@mail.com</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="images/call.png"style="padding: 5px;cursor: pointer;" ></td>
+                                            <td><div style="padding: 5px;opacity: 0.4;">1234 5678 9012</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="images/location.png" style="padding: 5px;cursor: pointer;"></td>
+                                            <td><div style="padding: 5px;opacity: 0.4;">Location</div></td>
+                                        </tr>
+                                        
+                                    </table>
+                                </div>
+                                <div><img src="images/edit.png" class="pencil1" ></div>
+                            
+                        </div>
+                        <div class="aboutme">
+                           <span style="font-size: 16px;left: 35px;top: 35px;position: absolute;">About Me</span>
+                           <span style="font-size: 14px;left: 35px;top: 65px;position: absolute;opacity: 0.4; line-height: 23px; ">
+                            Creative UI/UX artist and designer with talent<br> for developing unique custom artwork. <br>
+                            Innovative approach to idea and concept<br> development. 
+                            Offering 5 years of expertise<br> overseeing individual projects and brand<br> development collections.
+                           </span >
+                           <hr style="margin-top:305px; opacity:0.4;width:82% ">  
+                           <div class="pencil2" >
+                                <img src="images/edit.png">
+                                <img src="images/DotsThree.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-right">
+                        <div class="skills">
+                            <div class="">
+                                <div class="right-images-back" style=""></div>
+                                    <img class="r-i-icons" src="images/light-bulb 1.png" >
+                                <span class="r-i-i-heading">Skills</span>
+                                <div style="font-size: 14px;left: 95px;top: 65px;position: absolute;opacity: 0.4;font-size: 14px;line-height: 23px; ">
+                                 <ul>
+                                    <li>UX research skills </li>
+                                    <li>Wireframing and prototyping skills</li>
+                                    <li>UX writing skills</li>
+                                    <li>Interaction design skills</li>
+                                    <li>Coding skills</li> 
+                                    <li>Information architecture skills</li>   
+                                 </ul>
+                                </div >
+                                <hr style="margin-top:245px; opacity:0.4;width:82% ">  
+                                <div class="pencil2" >
+                                    <img src="images/edit.png">
+                                    <img src="images/DotsThree.png">
+                                </div>
+                             </div>
+                        </div>
+                        <div class="education">
+                            <div>
+                                <div class="right-images-back" style=""></div>
+                                <img class="r-i-icons" src="images/portfolio 1.png" >
+                            <span class="r-i-i-heading">Educations</span>
+                            <div style="top: 70px;left:120px; position: absolute; opacity: 0.4; font-size: 14px;line-height: 23px;">
+                                <div style="float: left; width: 450px; position: absolute;">
+                                    Bachelor of Arts - Design  <br>                                                                    
+                                    Field & Fort University <br>
+                                    <li>
+                                        Top 10 percentile of the class<br>
+                                    </li>
+                                    Master of Arts - Graphic design
+                                </div>
+                                
+                                <div style="position: absolute;width: 300px;left: 400px;">Nov ‘13 - Dec ‘17<br>
+                                    Mansfield, Ohio<br><br>
+                                    Texas University
+                                </div>
+                            </div>
+                            <hr style="margin-top:205px; opacity:0.4;width:82% "> 
+                            <div class="pencil2" >
+                                <img src="images/edit.png">
+                                <img src="images/DotsThree.png">
+                            </div>
+                            </div>
+                        </div>
+                        <div class="experiance">
+                            <div>
+                                <div class="right-images-back" style=""></div>
+                                <img class="r-i-icons" src="images/portfolio-2.png" >
+                            <span class="r-i-i-heading" >Experiance</span>
+                            <div style="top: 70px;left:120px; position: absolute; opacity: 0.4; font-size: 14px;line-height: 23px;">
+                                <ul>
+                                    <li>Advertising Speciality Institute, San Francisco, TX - Graphic Designer<br><span style="font-style: italic;">Dec ‘18 - June ‘20</span ></li>
+                                    <li>Advertising Age - Graphic Design Intern<br> <span style="font-style: italic;">Jan ‘21 - Nov ‘22</span></li>
+                               </ul>
+                            </div>
+                            <hr style="margin-top:205px; opacity:0.4;width:82% ">
+                            <div class="pencil2">
+                                <img src="images/edit.png">
+                                <img src="images/DotsThree.png">
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="b-lines"></div>
+                <div class="bottom-heading">
+                    <h1>Get Notified every new job</h1>
+                    <p>Ideal platform for job seekers passionate about startups and<br> seeking new career opportunities.</p>
+                </div>
+                <div class="subscribe">
+                   <span>Type Your Email Address</span><button><span style="text-align: center">Subscribe</span></button>
+                </div>
+            </div>
+            <div class="footer1">
+                <div class="f-hire1">
+                    <h2>HireMe Now!</h2>
+                    <p>Ideal platform for job seekers<br> passionate about startups and<br>seeking new career opportunities.</p>
+                    <div class="social">
+                        <table>
+                            <tr>
+                                <td><div class="social-icon"><img src="images/youtube.png"></div></td>
+                                <td><div class="social-icon"><img src="images/instagram.png"></div></td>
+                                <td><div class="social-icon"><img src="images/twitter.png"></div></td>
+                                <td><div class="social-icon"><img src="images/linked.png"></div></td>
+                                <td><div class="social-icon"><img src="images/facebook.png"></div></td>
+                                
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="f-link">
+                   <div class="f-l-table">
+                    <table>
+                        <th><div class="row1">About us</div></th>
+                        <th><div class="row1">Company</div></th>
+                        <th><div class="row1">Support</div></th>
+                        <th><div class="row1">Service</div></th>
+                        <tr>
+                            <td><div  class="row2">About us</div></td>
+                            <td><div  class="row2">Contact us</div></td>
+                            <td><div  class="row2">Suport</div></td>
+                            <td><div  class="row2">SEO</div></td>
+                        </tr>
+                        <tr>
+                            <td><div  class="row2">Home</div></td>
+                            <td><div  class="row2">Career</div></td>
+                            <td><div  class="row2">Privacy</div></td>
+                            <td><div  class="row2">UI Design</div></td>
+                        </tr>
+                        <tr>
+                            <td><div  class="row2">Feature</div></td>
+                            <td><div  class="row2">Pricing</div></td>
+                            <td><div  class="row2">FAQ</div></td>
+                            <td><div  class="row2">Developer</div></td>
+                        </tr>
+                        <tr>
+                            <td><div   class="row2">Team</div></td>
+                            <td><div  class="row2">Blog</div></td>
+                            <td><div  class="row2"></div></td>
+                            <td><div  class="row2">Accountr</div></td>
+                        </tr>
+                        
+                        
+                    </table>
+                   </div>
+                </div>
+            </div>
+            <hr style="margin-top: 1750px;margin-left: 15%; width: 85%;">
+            <div style="margin-top: 30px;">
+                <div style="float:left ;margin-left: 15%;color: #6D7394;">Terms & Conditions | Privacy Policy</div>
+                <div style="float:right ;color: #6D7394;">Copyright © 2023. All right reserved </div>
+            </div>
+
+
+        </div>
+    </body>
+</html>
